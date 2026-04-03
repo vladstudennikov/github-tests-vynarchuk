@@ -1,0 +1,14 @@
+from models import TaskItem
+# from validator import validate_title
+
+class TaskService:
+    def __init__(self):
+        self.tasks = []
+
+    def add_task(self, title: str):
+        # validate_title(title) - for future
+        task = TaskItem(title)
+        self.tasks.append(task)
+
+    def get_tasks(self):
+        return self.tasks
