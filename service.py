@@ -7,7 +7,7 @@ class TaskService:
 
     def add_task(self, title: str):
         print(f"[LOG] Adding task: {title}")
-        # validate_title(title.strip())
+        validate_title(title.strip())
         task = TaskItem(title.strip())
         self.tasks.append(task)
 
