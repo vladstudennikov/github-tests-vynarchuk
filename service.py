@@ -1,12 +1,12 @@
 from models import TaskItem
-# from validator import validate_title
+from validator import validate_title
 
 class TaskService:
     def __init__(self):
         self.tasks = []
 
     def add_task(self, title: str):
-        # validate_title(title) - for future
+        validate_title(title)
         task = TaskItem(title)
         self.tasks.append(task)
 
