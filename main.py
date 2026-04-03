@@ -8,7 +8,7 @@ def main():
         print("2 - Show tasks")
         print("3 - Exit")
 
-        choice = input("Choose: ")
+        choice = input("Choose an option: ")
 
         if choice == "1":
             title = input("Enter task title: ")
