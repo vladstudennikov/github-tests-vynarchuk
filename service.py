@@ -10,6 +10,7 @@ class TaskService:
         validate_title(title.strip())
         task = TaskItem(title.strip())
         self.tasks.append(task)
+        print("[LOG] Task successfully added")
 
     def get_tasks(self):
         return self.tasks
